@@ -1,0 +1,146 @@
+[
+
+{
+"fitnessId" : 1,
+"excerciseName" : "pushup",
+"excerciseImage" :"../../../assets/",
+"workoutType" :"fullbodyworkout",
+"subtypeofWorkout":"freebody",
+"duration" :30,
+"rating" :2,
+"benefits" :"It helps to tone our body  "
+},
+
+{
+"fitnessId" : 2,
+"excerciseName" : "lunges",
+"excerciseImage" :"../../../assets/",
+"workoutType" :"fullbodyworkout",
+"subtypeofWorkout":"freebody",
+"duration" :15,
+"rating" :3,
+"benefits" :"You will fill fit for the day  "
+},
+
+{
+"fitnessId" : 3,
+"excerciseName" : "cycling",
+"excerciseImage" :"../../../assets/",
+"workoutType" :"fullbodyworkout",
+"subtypeofWorkout":"machine",
+"duration" :30,
+"rating" :5,
+"benefits" :"It will strengthen of yor body "
+},
+
+{
+"fitnessId" :4,
+"excerciseName" : "tripping",
+"excerciseImage" :"../../../assets/",
+"workoutType" :"fullbodyworkout",
+"subtypeofWorkout":"machine",
+"duration" :30,
+"rating" :5,
+"benefits" :"It will strengthen of yor body "
+},
+{
+"fitnessId" : 5,
+"excerciseName" : "outerboxing",
+"excerciseImage" :"../../../assets/",
+"workoutType" :"boxing",
+"subtypeofWorkout":"kickboxing",
+"duration" :60,
+"rating" :4,
+"benefits" :"It burn more calories  "
+},
+
+{
+"fitnessId" :6,
+"excerciseName" : "pressureboxing",
+"excerciseImage" :"../../../assets/",
+"workoutType" :"boxing",
+"subtypeofWorkout":"cardioboxing",
+"duration" :45,
+"rating" :3,
+"benefits" :"It will help to feel energyetic "
+},
+{
+    "fitnessId": 7,
+    "excerciseName" : "padmasana",
+    "excerciseImage": "../../../assets/",
+    "workoutType": "Yoga",
+    "subtypeofWorkout": "mind",
+    "duration": 5,
+    "rating" :5,
+    "benefits": "It will help to increase the concenration "
+ },
+{
+    "fitnessId": 8,
+    "excerciseName" : "vajrasana",
+    "excerciseImage": "../../../assets/",
+    "workoutType": "Yoga",
+    "subtypeofWorkout": "mind",
+    "duration": 10,
+    "rating" :3,
+    "benefits": "It will help to reduse stress"
+ },
+ {
+    "fitnessId": 9,
+    "excerciseName" : "tadasana",
+    "excerciseImage": "../../../assets/",
+    "workoutType": "Yoga",
+    "subtypeofWorkout":"body",
+    "duration": 10,
+    "rating" :4,
+    "benefits": "It will help to make fit our body  "
+ },
+ {
+    "fitnessId": 10,
+    "excerciseName" : "trikonasana",
+    "excerciseImage": "../../../assets/",
+    "workoutType": "Yoga",
+    "subtypeofWorkout": "body",
+    "duration": 20,
+    "rating" :4,
+    "benefits": "It will help to increase the concenration "
+ },
+ {
+    "fitnessId": 11,
+    "excerciseName" : "cardioaerio",
+    "excerciseImage": "../../../assets/",
+    "workoutType": "Dance",
+    "subtypeofWorkout": "Zumba",
+    "duration": 25,
+    "rating" :5,
+    "benefits": "It will help to feel good "
+ },
+  {
+    "fitnessId": 12,
+    "excerciseName" : "bombayjam",
+    "excerciseImage": "../../../assets/",
+    "workoutType": "Dance",
+    "subtypeofWorkout": "Zumba",
+    "duration": 20,
+    "benefits": "It will help helathy"
+ },
+  {
+    "fitnessId": 13,
+    "excerciseName" : "salsa",
+    "excerciseImage": "../../../assets/",
+    "workoutType": "Dance",
+    "subtypeofWorkout": "aerobics",
+    "duration": 15,
+    "rating" :4,
+    "benefits": "It will help to feel good "
+ },
+  {
+    "fitnessId": 14,
+    "excerciseName" : "ballroom",
+    "excerciseImage": "../../../assets/",
+    "workoutType": "Dance",
+    "subtypeofWorkout": "aerobics",
+    "duration": 20,
+    "rating" :1,
+    "benefits": "It will help to feel good "
+ }
+]

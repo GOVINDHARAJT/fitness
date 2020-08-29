@@ -1,0 +1,116 @@
+<app-header></app-header>
+
+
+
+<div class="maincontainer">
+<!--
+  <video autoplay muted loop id="myVideo">
+    <source src="../../../assets/bg.mp4" type="video/mp4">
+  </video>
+-->
+    <button mat-raised-button color="accent" [matMenuTriggerFor]="fitness">Explore More About Fitness </button>
+    <button mat-raised-button color="accent" [matMenuTriggerFor]="Search">Search by types  </button>
+  <mat-menu #fitness="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="Body">Body</button>
+    <button mat-menu-item [matMenuTriggerFor]="Mind">Mind</button>
+  </mat-menu>
+
+  <mat-menu #Body="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="FullBodyWorkout">Full Body Workout</button>
+    <button mat-menu-item [matMenuTriggerFor]="Boxing">Boxing</button>
+    <button mat-menu-item [matMenuTriggerFor]="Yoga">Yoga</button>
+    <button mat-menu-item [matMenuTriggerFor]="Dance">Dance</button>
+  </mat-menu>
+
+  
+  <mat-menu #FullBodyWorkout="matMenu">
+    <button mat-menu-item color="warn" (click)="openFullBodyWorkout('Freebodyworkout')"
+      aria-label="Show an example snack-bar">Free Body Work out</button>
+    <button mat-menu-item color="warn" (click)="openFullBodyWorkout('Machineworkout')"
+      aria-label="Show an example snack-bar">Machine Workout </button> 
+  </mat-menu>
+
+   
+  <mat-menu #Boxing="matMenu">
+    <button mat-menu-item color="warn" (click)="openBoxing('Kickboxing')"
+      aria-label="Show an example snack-bar">Kick Boxing</button>
+    <button mat-menu-item color="warn" (click)="openBoxing('Cardioboxing')"
+      aria-label="Show an example snack-bar">Cardio Boxing </button> 
+  </mat-menu> 
+
+   
+  <mat-menu #Yoga="matMenu">
+    <button mat-menu-item color="warn" (click)="openYoga('body')"
+      aria-label="Show an example snack-bar">Yoga for body</button>
+    <button mat-menu-item color="warn" (click)="openYoga('Mind')"
+      aria-label="Show an example snack-bar">Yoga for Mind  </button> 
+  </mat-menu>
+
+   
+  <mat-menu #Dance="matMenu">
+    <button mat-menu-item color="warn" (click)="openDance('Zumba')"
+      aria-label="Show an example snack-bar">Zumba</button>
+    <button mat-menu-item color="warn" (click)="openDance('aerobic')"
+      aria-label="Show an example snack-bar">Aerobics</button> 
+  </mat-menu>
+  
+  <mat-menu #Mind="matMenu">
+    <button mat-menu-item color="warn" (click)="openMind('Yoga')"
+      aria-label="Show an example snack-bar">Yoga</button>
+    <button mat-menu-item color="warn" (click)="openMind('Meditation')"
+      aria-label="Show an example snack-bar">Meditation</button> 
+  </mat-menu>
+
+  <mat-menu #Search="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="Duration">Duration</button>
+    <button mat-menu-item [matMenuTriggerFor]="Rating">Rating</button>
+  </mat-menu>
+
+  <!-- <mat-menu #Duration="matMenu">
+    <button mat-menu-item color="warn" (click)="openDuration('duration')"
+      aria-label="Show an example snack-bar">30 Mins</button>
+      <button mat-menu-item color="warn" (click)="openDuration('duration')"
+      aria-label="Show an example snack-bar">45 Mins</button>
+      <button mat-menu-item color="warn" (click)="openDuration('duration')"
+      aria-label="Show an example snack-bar">60 Mins</button>
+      <button mat-menu-item color="warn" (click)="openDuration('duration')"
+      aria-label="Show an example snack-bar">15 Mins</button>
+  </mat-menu> -->
+
+  <!-- <mat-menu #Rating="matMenu">
+    <button mat-menu-item color="warn" (click)="openRating('rating')"
+      aria-label="Show an example snack-bar">1</button>
+    <button mat-menu-item color="warn" (click)="openRating('rating')"
+      aria-label="Show an example snack-bar">2</button> 
+      <button mat-menu-item color="warn" (click)="openRating('rating')"
+      aria-label="Show an example snack-bar">3</button> 
+      <button mat-menu-item color="warn" (click)="openRating('rating')"
+      aria-label="Show an example snack-bar">4</button> 
+      <button mat-menu-item color="warn" (click)="openRating('rating')"
+      aria-label="Show an example snack-bar">5</button> 
+  </mat-menu> -->
+
+  <mat-menu #Duration="matMenu">
+    <button mat-menu-item color="accent" (click)="openDuration(10)" aria-label="Show an example snack-bar">10 Minutes</button>
+    <button mat-menu-item color="accent" (click)="openDuration(15)" aria-label="Show an example snack-bar">15 Minutes</button>
+    <button mat-menu-item color="accent" (click)="openDuration(30)" aria-label="Show an example snack-bar">30 Minutes</button>
+    <button mat-menu-item color="accent" (click)="openDuration(45)" aria-label="Show an example snack-bar">45 Minutes</button>
+    <button mat-menu-item color="accent" (click)="openDuration(60)" aria-label="Show an example snack-bar">60 Minutes</button>
+  </mat-menu>
+
+  <mat-menu #Rating="matMenu">
+    <button mat-menu-item color="accent" (click)="openRating(1)" aria-label="Show an example snack-bar">One</button>
+    <button mat-menu-item color="accent" (click)="openRating(2)" aria-label="Show an example snack-bar">Two</button>
+    <button mat-menu-item color="accent" (click)="openRating(3)" aria-label="Show an example snack-bar">Three</button>
+    <button mat-menu-item color="accent" (click)="openRating(4)" aria-label="Show an example snack-bar">Four</button>
+    <button mat-menu-item color="accent" (click)="openRating(5)" aria-label="Show an example snack-bar">Five</button>
+  </mat-menu>
+ 
+</div> 
+
+<div class="music-outlet">
+  <router-outlet name="fitnessOutlet"></router-outlet>
+</div>
+
+  
+  <app-footer></app-footer>
